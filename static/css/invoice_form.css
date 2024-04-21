@@ -1,0 +1,20 @@
+.custom-select-wrapper {
+    position: relative;
+  }
+  
+  .custom-select-wrapper::after {
+    content: "\f0d7"; /* FontAwesome down arrow */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default arrow */
+    padding-right: 30px; /* Make space for custom arrow */
+  }

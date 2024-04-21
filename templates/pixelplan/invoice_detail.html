@@ -1,0 +1,57 @@
+<!-- invoice_detail.html -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title mb-3">Invoice Details</h5>
+        <div class="table-responsive">
+            <table class="table table-borderless mb-0">
+                <tbody>
+                    <tr>
+                        <th class="ps-0" scope="row">Invoice ID :</th>
+                        <td class="text-muted">{{ invoice.id }}</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">Invoice Name :</th>
+                        <td class="text-muted">{{ invoice.name }}</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">Status :</th>
+                        <td class="text-muted">{{ invoice.status }}</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">Shared On :</th>
+                        <td class="text-muted">{{ invoice.shared_on }}</td>
+                    </tr>
+                    <!-- Additional invoice fields can be added here -->
+                </tbody>
+            </table>
+        </div>
+        <h5 class="card-title mb-3 mt-4">Client Information</h5>
+        <div class="table-responsive">
+            <table class="table table-borderless mb-0">
+                <tbody>
+                    <tr>
+                        <th class="ps-0" scope="row">Full Name :</th>
+                        <td class="text-muted">{{ invoice.client.given_name }} {{ invoice.client.family_name }}</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">E-mail :</th>
+                        <td class="text-muted">{{ invoice.client.email }}</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">Status :</th>
+                        <td class="text-muted">{{ invoice.client.status }}</td>
+                    </tr>
+                    <!-- The commented-out code can be replaced with actual client fields if needed -->
+                    <!-- <tr>
+                        <th class="ps-0" scope="row">Location :</th>
+                        <td class="text-muted">California, United States</td>
+                    </tr>
+                    <tr>
+                        <th class="ps-0" scope="row">Joining Date :</th>
+                        <td class="text-muted">24 Nov 2021</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div><!-- end card body -->
+</div>
